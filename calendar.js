@@ -1,0 +1,1 @@
+// CALENDRIER FULLCALENDAR : Récupère les dates des camions via AJAX et les affiche sur l'agenda admin.

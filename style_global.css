@@ -1,0 +1,161 @@
+/* Importation de la police demandée dans le cahier des charges */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* --- VARIABLES DE COULEURS --- */
+:root {
+    --bleu-primary: #0056b3; /* Bleu TransMaroc */
+    --vert-success: #28a745; /* Vert validation/livré */
+    --blanc-bg: #f8f9fa;     /* Fond très légèrement grisé pour aérer */
+    --blanc-pur: #ffffff;
+    --texte-sombre: #333333;
+    --texte-clair: #6c757d;
+}
+
+/* --- RESET & BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--blanc-bg);
+    color: var(--texte-sombre);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pour que le footer reste toujours en bas */
+}
+
+main {
+    flex: 1; /* Le contenu principal prend toute la place disponible */
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    background-color: var(--blanc-pur);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    color: var(--bleu-primary);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texte-sombre);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--vert-success);
+}
+
+/* --- BOUTONS --- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--bleu-primary);
+    color: var(--blanc-pur);
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--bleu-primary);
+    color: var(--bleu-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--bleu-primary);
+    color: var(--blanc-pur);
+}
+
+/* --- FORMULAIRES --- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --- TABLES (Pour l'admin et l'espace client) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--blanc-pur);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: var(--bleu-primary);
+    color: var(--blanc-pur);
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--texte-sombre);
+    color: var(--blanc-pur);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: var(--vert-success);
+    text-decoration: none;
+}

@@ -1,0 +1,60 @@
+/* --- DASHBOARD ADMIN --- */
+.stats-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.stat-box {
+    flex: 1;
+    background: var(--blanc-pur);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+    border-bottom: 4px solid var(--bleu-primary);
+    transition: transform 0.2s;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+}
+
+.stat-box h3 {
+    font-size: 1rem;
+    color: var(--texte-clair);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-box .chiffre {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--vert-success);
+    margin-top: 10px;
+}
+
+/* --- BADGES STATUTS (Dans les tableaux admin) --- */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.badge-attente { background: #ffeeba; color: #856404; }
+.badge-transit { background: #b8daff; color: #004085; }
+.badge-livre { background: #c3e6cb; color: #155724; }
+
+/* --- ACTIONS ADMIN (Boutons petits) --- */
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+}
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-danger:hover {
+    background-color: #c82333;
+}

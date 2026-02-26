@@ -1,0 +1,76 @@
+/* --- ACCUEIL (Hero Section) --- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blanc-pur);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.hero h1 {
+    color: var(--bleu-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--texte-clair);
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: var(--blanc-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--vert-success);
+}
+
+/* --- PAGE DE CONNEXION --- */
+.login-container {
+    max-width: 400px;
+    margin: 4rem auto;
+    background: var(--blanc-pur);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: var(--bleu-primary);
+    margin-bottom: 1.5rem;
+}
+
+/* --- TRACKING (Frise de suivi) --- */
+.tracking-timeline {
+    border-left: 3px solid var(--bleu-primary);
+    margin: 20px 0 20px 20px;
+    padding-left: 20px;
+}
+
+.tracking-step {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tracking-step::before {
+    content: '';
+    position: absolute;
+    left: -29px; /* Centrer sur la bordure */
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: var(--blanc-pur);
+    border: 3px solid var(--bleu-primary);
+    border-radius: 50%;
+}
+
+.tracking-step.done::before {
+    background: var(--vert-success);
+    border-color: var(--vert-success);
+}
